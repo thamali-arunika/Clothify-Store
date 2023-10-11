@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane prefHeight="578.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashBoardForm">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b270e53" height="608.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="884.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e6cfff9d" height="383.0" layoutX="230.0" layoutY="136.0" stroke="TRANSPARENT" strokeType="INSIDE" width="537.0">
+         <effect>
+            <InnerShadow height="0.0" radius="0.0" width="0.0">
+               <color>
+                  <Color opacity="0.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Rectangle>
+   </children>
+</AnchorPane>
