@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="669.0" prefWidth="412.0" style="-fx-background-color: FFF2FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="296.0" layoutY="-39.0" stroke="TRANSPARENT" strokeType="INSIDE" width="412.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.296529989513313" startX="0.31230284513359197" startY="0.13249211356466878">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.08876333385705948" green="0.01860000006854534" blue="0.6200000047683716" opacity="0.28177666664123535" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2052845528455284">
+                     <color>
+                        <Color red="0.09272000193595886" green="0.024399999529123306" blue="0.6100000143051147" opacity="0.2853299677371979" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.39934250013641076">
+                     <color>
+                        <Color red="0.8799999952316284" green="0.058666665107011795" opacity="0.302030473947525" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.549503464833306">
+                     <color>
+                        <Color red="0.5899999737739563" green="0.11800000071525574" blue="0.14159999787807465" opacity="0.25999999046325684" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5772357723577236">
+                     <color>
+                        <Color red="0.4399999976158142" green="0.12759999930858612" blue="0.20049333572387695" opacity="0.25746193528175354" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.3499999940395355" opacity="0.5736041069030762" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <AnchorPane layoutX="29.0" layoutY="180.0" opacity="0.98" prefHeight="386.0" prefWidth="353.0" style="-fx-background-color: FFF2FF; -fx-background-radius: 4;">
+         <effect>
+            <DropShadow height="7.55" offsetY="10.0" radius="1.3875" width="0.0">
+               <color>
+                  <Color red="0.7699999809265137" green="0.04619999974966049" blue="0.4201633334159851" opacity="0.10152284801006317" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="112.0" layoutY="14.0" prefHeight="44.0" prefWidth="129.0" text="Clothify">
+               <font>
+                  <Font name="Segoe Script Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField layoutX="33.0" layoutY="77.0" prefHeight="40.0" prefWidth="291.0" promptText="              Email Address" style="-fx-background-color: D9D9D9;">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="0.296529989513313" startX="0.18611987381703474" startY="0.13249211356466878">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.09878666698932648" green="0.01860000006854534" blue="0.6200000047683716" opacity="0.4340609312057495" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.20528455284552843">
+                           <color>
+                              <Color red="0.09272000193595886" green="0.024399999529123306" blue="0.6100000143051147" opacity="0.4223858118057251" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.39934250013641076">
+                           <color>
+                              <Color red="0.8799999952316284" green="0.058666665107011795" opacity="0.302030473947525" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.549503464833306">
+                           <color>
+                              <Color red="0.5899999737739563" green="0.11800000071525574" blue="0.14159999787807465" opacity="0.25999999046325684" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5772357723577236">
+                           <color>
+                              <Color red="0.4399999976158142" green="0.12759999930858612" blue="0.20049333572387695" opacity="0.25746193528175354" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" blue="0.3499999940395355" opacity="0.5736041069030762" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="0.0" offsetY="8.9" radius="0.0" width="0.0">
+                     <color>
+                        <Color opacity="0.04314719885587692" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </JFXTextField>
+            <JFXTextField layoutX="31.0" layoutY="140.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="291.0" promptText="                Password" style="-fx-background-color: D9D9D9;" unFocusColor="BLACK">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="0.296529989513313" startX="0.18611987381703474" startY="0.13249211356466878">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.09878666698932648" green="0.01860000006854534" blue="0.6200000047683716" opacity="0.4340609312057495" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.20528455284552843">
+                           <color>
+                              <Color red="0.09272000193595886" green="0.024399999529123306" blue="0.6100000143051147" opacity="0.4223858118057251" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.39934250013641076">
+                           <color>
+                              <Color red="0.8799999952316284" green="0.058666665107011795" opacity="0.302030473947525" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.549503464833306">
+                           <color>
+                              <Color red="0.5899999737739563" green="0.11800000071525574" blue="0.14159999787807465" opacity="0.25999999046325684" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5772357723577236">
+                           <color>
+                              <Color red="0.4399999976158142" green="0.12759999930858612" blue="0.20049333572387695" opacity="0.25746193528175354" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" blue="0.3499999940395355" opacity="0.5736041069030762" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="0.0" offsetY="8.9" radius="0.0" width="0.0">
+                     <color>
+                        <Color opacity="0.04568531736731529" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="59.0" layoutY="205.0" prefHeight="44.0" prefWidth="235.0" style="-fx-background-color: #652238; -fx-background-radius: 0;" text="LOGIN" textFill="WHITE" textOverrun="CLIP" AnchorPane.topAnchor="205.0">
+               <effect>
+                  <Shadow />
+               </effect>
+            </JFXButton>
+            <Text fill="#ba2053" layoutX="201.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="forgotten password ?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#ba2053" layoutX="171.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register now" underline="true" wrappingWidth="90.6552734375">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="148.0" fitWidth="116.0" layoutX="72.0" layoutY="-71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/3d-plastic-people-woman-in-sunglasses-going-shopping.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="23.0" layoutY="-127.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="82.0" fitWidth="51.0" layoutX="16.0" layoutY="-91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/3d-business-young-man-walking-with-coffee.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="34.0" layoutX="124.0" layoutY="-66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/business-3d-couple-in-glasses-and-casual-clothes-standing.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="19.0" layoutX="150.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/3d-business-little-boy-standing-and-smiling.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Polygon fill="#63223878" layoutX="111.0" layoutY="608.0" points="-114.00000762939453, 29.0, -114.00000762939453, 7.0, -11.333351135253906, 19.66668701171875" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Polygon fill="#63223879" layoutX="219.0" layoutY="598.0" points="91.00003051757812, 29.0, -5.6666717529296875, 7.0, -125.66666412353516, 29.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Polygon fill="#63223878" layoutX="214.0" layoutY="598.0" points="99.33334350585938, 29.0, -5.6666717529296875, 51.66668701171875, -125.66666412353516, 29.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Polygon fill="#63223879" layoutX="519.0" layoutY="609.0" points="-107.0, 28.888916015625, -107.0, 4.888916015625, -216.99996948242188, 18.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fitHeight="68.0" fitWidth="108.0" layoutX="171.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/casual-life-3d-hanger-with-clothes-surrounded-by-plants-and-shoes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="129.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-c-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="157.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-f-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="189.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-y-32.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="252.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-fluency-clock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="119.0" layoutX="255.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-plastic-people-woman-in-sunglasses-in-shopping-cart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="27.0" layoutX="228.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/demure-young-man-in-fashion-clothes.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="34.0" layoutX="153.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-business-man-on-a-moped-with-a-phone.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="195.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/casual-life-3d-cat-in-box.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="182.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-business-small-child-with-laptop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="19.0" layoutX="206.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3d-business-little-girl-standing-and-smiling.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

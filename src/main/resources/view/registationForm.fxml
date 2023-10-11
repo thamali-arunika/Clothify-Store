@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="622.0" prefWidth="522.0" style="-fx-background-color: #FFF2FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userRegistration">
+   <children>
+      <QuadCurve controlX="214.66668701171875" controlY="268.66668701171875" endX="-166.00001525878906" endY="100.0" layoutX="160.0" layoutY="-100.0" startX="377.33331298828125" startY="100.0" stroke="TRANSPARENT" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.6782334023845684" endY="0.6372239642338797" startX="0.3627760425351019" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7200000286102295" green="0.08640000224113464" blue="0.29760000109672546" opacity="0.5532994866371155" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.30487804878048774">
+                     <color>
+                        <Color red="0.38999998569488525" green="0.13259999454021454" blue="0.2184000015258789" opacity="0.24543143808841705" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5325203252032521">
+                     <color>
+                        <Color red="0.14829333126544952" green="0.09960000216960907" blue="0.8299999833106995" opacity="0.22081218659877777" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6951219512195123">
+                     <color>
+                        <Color red="0.3799999952316284" green="0.12919999659061432" blue="0.2169799953699112" opacity="0.2956852614879608" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8211382113821137">
+                     <color>
+                        <Color red="0.8799999952316284" green="0.03519999980926514" blue="0.33087998628616333" opacity="0.37055838108062744" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8799999952316284" green="0.03519999980926514" blue="0.33087998628616333" opacity="0.302030473947525" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </QuadCurve>
+      <Text layoutX="241.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Ragistration">
+         <font>
+            <Font name="Gabriola" size="24.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="241.0" layoutY="151.0" prefHeight="25.0" prefWidth="201.0" />
+      <Text layoutX="105.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin User Name :">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin    Password :">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Text>
+      <JFXTextField layoutX="241.0" layoutY="183.0" prefHeight="25.0" prefWidth="201.0" />
+   </children>
+</AnchorPane>
