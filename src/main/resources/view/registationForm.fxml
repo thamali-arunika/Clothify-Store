@@ -19,7 +19,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="637.0" prefWidth="537.0" style="-fx-background-color: #FFF2FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userRegistration">
+<AnchorPane prefHeight="637.0" prefWidth="537.0" style="-fx-background-color: #FFF2FF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserRegistration">
    <children>
       <QuadCurve controlX="214.66668701171875" controlY="268.66668701171875" endX="-166.00001525878906" endY="100.0" layoutX="160.0" layoutY="-100.0" startX="377.33331298828125" startY="100.0" stroke="TRANSPARENT" strokeType="INSIDE">
          <fill>
