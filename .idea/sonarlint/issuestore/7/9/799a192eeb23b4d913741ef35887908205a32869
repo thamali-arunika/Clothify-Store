@@ -1,0 +1,9 @@
+
+—
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯¾œÇ
+w
+java:S1450"URemove the "parent" field and declare it as a local variable in the relevant methods.(ßçÖ’ûÿÿÿÿ8 ÍÇ³1
+q
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(÷‘éÑ8 ÍÇ³1
+v
+java:S1450"TRemove the "stage" field and declare it as a local variable in the relevant methods.(‹ğÑœıÿÿÿÿ8 ÍÇ³1
