@@ -34,7 +34,7 @@
             <DropShadow height="255.0" radius="127.0" width="255.0" />
          </effect>
       </Rectangle>
-      <Button layoutX="74.0" layoutY="194.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="item">
+      <Button layoutX="74.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnItemItem" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="item">
          <effect>
             <InnerShadow>
                <color>
@@ -47,7 +47,7 @@
          </font>
       </Button>
       <ButtonBar layoutX="-37.0" layoutY="60.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="74.0" layoutY="239.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="orders">
+      <Button layoutX="74.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnOrdersOrders" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="orders">
          <effect>
             <InnerShadow>
                <color>
@@ -59,7 +59,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="286.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="employers">
+      <Button layoutX="74.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnEmployerEmployer" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="employers">
          <effect>
             <InnerShadow>
                <color>
@@ -71,7 +71,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="331.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="suppliers">
+      <Button layoutX="74.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnSupplierSuplier" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="suppliers">
          <effect>
             <InnerShadow>
                <color>
@@ -83,7 +83,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="380.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="order details">
+      <Button layoutX="74.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOrderDetailsOrderDetails" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="order details">
          <effect>
             <InnerShadow>
                <color>
@@ -95,7 +95,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="428.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales return">
+      <Button layoutX="74.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnSalesReturnSalesReturn" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales return">
          <effect>
             <InnerShadow>
                <color>
@@ -107,7 +107,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="475.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales report">
+      <Button layoutX="74.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnSalesReportSalesReport" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales report">
          <effect>
             <InnerShadow>
                <color>
@@ -203,22 +203,6 @@
             </DropShadow>
          </effect>
       </ImageView>
-      <Button layoutX="82.0" layoutY="552.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="43.0" style="-fx-background-color: #F2C8B9;" textFill="#ffffff00">
-         <graphic>
-            <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/icons8-logout-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-         <effect>
-            <InnerShadow height="155.31" radius="43.5775">
-               <color>
-                  <Color red="0.41999998688697815" green="0.28139999508857727" blue="0.23100000619888306" opacity="0.29040610790252686" />
-               </color>
-            </InnerShadow>
-         </effect>
-      </Button>
       <ImageView fitHeight="53.0" fitWidth="43.0" layoutX="1024.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/3d-fluency-timetable.png" />
@@ -346,5 +330,14 @@
             <Image url="@../img/cartoony-calculator.png" />
          </image>
       </ImageView>
+      <JFXButton layoutX="100.0" layoutY="549.0" onAction="#btnArrowBack" prefHeight="37.0" prefWidth="21.0" style="-fx-background-color: #808080;" text=" ">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-back-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

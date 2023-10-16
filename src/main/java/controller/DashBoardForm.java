@@ -27,22 +27,64 @@ public class DashBoardForm implements Initializable {
 
     }
 
-    public void btnOrders(ActionEvent actionEvent) {
+    public void btnOrders(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/orderForm.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
-    public void btnEmployers(ActionEvent actionEvent) {
+    public void btnEmployers(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/employerForm.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
-    public void btnSuppliers(ActionEvent actionEvent) {
+    public void btnSuppliers(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/supplierForm.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
-    public void btnOrderDetails(ActionEvent actionEvent) {
+    public void btnOrderDetails(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/orderDetails.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
-    public void btnSalesReturn(ActionEvent actionEvent) {
+    public void btnSalesReturn(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/salesReturnForm.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
-    public void btnSalesReport(ActionEvent actionEvent) {
+    public void btnSalesReport(ActionEvent actionEvent) throws IOException {
+        URL resource = this.getClass().getResource("/view/salesReportForm.fxml");
+
+        assert resource != null;
+
+        Parent load = (Parent) FXMLLoader.load(resource);
+        this.root.getChildren().clear();
+        this.root.getChildren().add(load);
     }
 
     @Override
