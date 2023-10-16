@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="611.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardForm">
+<AnchorPane fx:id="root" prefHeight="611.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardForm">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b270e54" height="623.0" layoutX="-139.0" layoutY="-5.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1159.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="413.0" layoutX="303.0" layoutY="122.0" stroke="TRANSPARENT" strokeType="INSIDE" width="537.0">
@@ -30,7 +30,7 @@
             <DropShadow height="255.0" radius="127.0" width="255.0" />
          </effect>
       </Rectangle>
-      <Button layoutX="74.0" layoutY="194.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="item">
+      <Button layoutX="74.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnItem" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="item">
          <effect>
             <InnerShadow>
                <color>
@@ -43,7 +43,7 @@
          </font>
       </Button>
       <ButtonBar layoutX="-37.0" layoutY="60.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="74.0" layoutY="239.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="orders">
+      <Button layoutX="74.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnOrders" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="orders">
          <effect>
             <InnerShadow>
                <color>
@@ -55,7 +55,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="286.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="employers">
+      <Button layoutX="74.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnEmployers" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="employers">
          <effect>
             <InnerShadow>
                <color>
@@ -67,7 +67,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="331.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="suppliers">
+      <Button layoutX="74.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnSuppliers" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="suppliers">
          <effect>
             <InnerShadow>
                <color>
@@ -79,7 +79,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="380.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="order details">
+      <Button layoutX="74.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOrderDetails" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="order details">
          <effect>
             <InnerShadow>
                <color>
@@ -91,7 +91,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="428.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales return">
+      <Button layoutX="74.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnSalesReturn" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales return">
          <effect>
             <InnerShadow>
                <color>
@@ -103,7 +103,7 @@
             <Font name="Arial Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="74.0" layoutY="475.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales report">
+      <Button layoutX="74.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnSalesReport" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales report">
          <effect>
             <InnerShadow>
                <color>
