@@ -2,6 +2,7 @@ package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -9,12 +10,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ResourceBundle;
 
-public class DashBoardForm {
+public class DashBoardForm implements Initializable {
     public AnchorPane root;
-    private Stage stage;
-    private Scene scene;
-    private Parent parent;
+
 
     public void btnItem(ActionEvent actionEvent) throws IOException {
         URL resource = this.getClass().getResource("/view/itemForm.fxml");
@@ -43,5 +43,10 @@ public class DashBoardForm {
     }
 
     public void btnSalesReport(ActionEvent actionEvent) {
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }
