@@ -7,7 +7,6 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -17,10 +16,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="618.0" prefWidth="1034.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+<AnchorPane prefHeight="405.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6b270e54" height="711.0" layoutX="-67.0" layoutY="-71.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1175.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="413.0" layoutX="243.0" layoutY="122.0" stroke="TRANSPARENT" strokeType="INSIDE" width="661.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="419.0" layoutX="-6.0" layoutY="-8.0" stroke="TRANSPARENT" strokeType="INSIDE" width="670.0">
          <effect>
             <InnerShadow choke="0.12" height="96.92" radius="59.1525" width="141.69">
                <color>
@@ -29,284 +27,101 @@
             </InnerShadow>
          </effect>
       </Rectangle>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#69270f00" height="351.0" layoutX="57.0" layoutY="171.0" stroke="#69271032" strokeType="INSIDE" width="138.0">
-         <effect>
-            <DropShadow height="255.0" radius="127.0" width="255.0" />
-         </effect>
-      </Rectangle>
-      <Button layoutX="74.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnItemItem" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="item">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <ButtonBar layoutX="-37.0" layoutY="60.0" prefHeight="40.0" prefWidth="200.0" />
-      <Button layoutX="74.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnOrdersOrders" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="orders">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="74.0" layoutY="286.0" mnemonicParsing="false" onAction="#btnEmployerEmployer" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="employers">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="74.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnSupplierSuplier" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="suppliers">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="74.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnOrderDetailsOrderDetails" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="order details">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="74.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnSalesReturnSalesReturn" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales return">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <Button layoutX="74.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnSalesReportSalesReport" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: b696db;" text="sales report">
-         <effect>
-            <InnerShadow>
-               <color>
-                  <Color opacity="0.2766497731208801" />
-               </color>
-            </InnerShadow>
-         </effect>
-         <font>
-            <Font name="Arial Bold" size="12.0" />
-         </font>
-      </Button>
-      <ImageView fitHeight="129.0" fitWidth="154.0" layoutY="5.0" opacity="0.64" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/blossom-fuchsia-flowers-on-a-large-corner-twig.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.08883249014616013" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="58.0" fitWidth="93.0" layoutX="18.0" layoutY="31.0" opacity="0.69" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -150;">
-         <image>
-            <Image url="@../img/blossom-fuchsia-flowers-on-a-small-twig.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.09390866756439209" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="40.0" fitWidth="36.0" layoutX="77.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/3d-fluency-peace-pigeon.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.3299492597579956" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="132.0" fitWidth="101.0" layoutX="983.0" layoutY="453.0" opacity="0.76" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -90;">
-         <image>
-            <Image url="@../img/lettering-red-flowers.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.6649746894836426" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="180.0" fitWidth="89.0" layoutX="1001.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/blossom-pink-lily-with-a-bud-on-a-green-stem.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.9467005133628845" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="67.0" fitWidth="92.0" layoutX="981.0" layoutY="348.0" opacity="0.78" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -120;">
-         <image>
-            <Image url="@../img/lettering-twig-with-green-leaves-and-a-red-bud-looking-up.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.6522842049598694" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="107.0" layoutX="976.0" layoutY="351.0" opacity="0.67" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 60;">
-         <image>
-            <Image url="@../img/lettering-twig-with-green-leaves-and-red-bud.png" />
-         </image>
-         <effect>
-            <DropShadow>
-               <color>
-                  <Color opacity="0.7436548471450806" />
-               </color>
-            </DropShadow>
-         </effect>
-      </ImageView>
-      <ImageView fitHeight="53.0" fitWidth="43.0" layoutX="1024.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/3d-fluency-timetable.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="1029.0" layoutY="78.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="43.0" style="-fx-background-color: #BFA733; -fx-background-radius: 100;">
-         <effect>
-            <InnerShadow height="0.0" radius="0.96" width="5.84" />
-         </effect>
-      </Button>
-      <Text layoutX="321.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="item code :" wrappingWidth="89.0">
+      <ButtonBar layoutX="-286.0" layoutY="-70.0" prefHeight="40.0" prefWidth="200.0" />
+      <Text layoutX="72.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="item code :" wrappingWidth="89.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXTextField layoutX="387.0" layoutY="136.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
-      <Text layoutX="321.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supplier  :" wrappingWidth="75.6600722498822">
+      <JFXTextField layoutX="138.0" layoutY="6.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
+      <Text layoutX="72.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="supplier  :" wrappingWidth="75.6600722498822">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXComboBox layoutX="387.0" layoutY="168.0" prefHeight="25.0" prefWidth="82.0" promptText="             Id" unFocusColor="#020202" />
-      <JFXComboBox layoutX="485.0" layoutY="168.0" prefHeight="25.0" prefWidth="103.0" promptText="             Name" unFocusColor="#020202" />
-      <JFXTextField layoutX="397.0" layoutY="197.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-      <Text layoutX="321.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description :" wrappingWidth="89.0">
+      <JFXComboBox layoutX="138.0" layoutY="38.0" prefHeight="25.0" prefWidth="82.0" promptText="             Id" unFocusColor="#020202" />
+      <JFXComboBox layoutX="236.0" layoutY="38.0" prefHeight="25.0" prefWidth="103.0" promptText="             Name" unFocusColor="#020202" />
+      <JFXTextField layoutX="148.0" layoutY="67.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+      <Text layoutX="72.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description :" wrappingWidth="89.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="321.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty :" wrappingWidth="46.0">
+      <Text layoutX="72.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty :" wrappingWidth="46.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXComboBox layoutX="355.0" layoutY="226.0" prefHeight="25.0" prefWidth="63.0" unFocusColor="#020202" />
-      <Text layoutX="441.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add qty :" wrappingWidth="69.29529571533203">
+      <JFXComboBox layoutX="106.0" layoutY="96.0" prefHeight="25.0" prefWidth="63.0" unFocusColor="#020202" />
+      <Text layoutX="192.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add qty :" wrappingWidth="69.29529571533203">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXComboBox layoutX="494.0" layoutY="226.0" prefHeight="25.0" prefWidth="63.0" unFocusColor="#020202" />
-      <JFXTextField layoutX="400.0" layoutY="258.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
-      <Text layoutX="321.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buying Price :" wrappingWidth="100.99261314031173">
+      <JFXComboBox layoutX="245.0" layoutY="96.0" prefHeight="25.0" prefWidth="63.0" unFocusColor="#020202" />
+      <JFXTextField layoutX="151.0" layoutY="128.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
+      <Text layoutX="72.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buying Price :" wrappingWidth="100.99261314031173">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <Text layoutX="643.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selling Price ;" wrappingWidth="89.0">
+      <Text layoutX="394.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selling Price ;" wrappingWidth="89.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXTextField layoutX="723.0" layoutY="127.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
-      <Text layoutX="644.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" wrappingWidth="43.0">
+      <JFXTextField layoutX="474.0" layoutY="-3.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
+      <Text layoutX="395.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type :" wrappingWidth="43.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXComboBox layoutX="685.0" layoutY="159.0" prefHeight="25.0" prefWidth="76.0" unFocusColor="#020202" />
-      <Text layoutX="645.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size :" wrappingWidth="43.0">
+      <JFXComboBox layoutX="436.0" layoutY="29.0" prefHeight="25.0" prefWidth="76.0" unFocusColor="#020202" />
+      <Text layoutX="396.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Size :" wrappingWidth="43.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXComboBox layoutX="685.0" layoutY="187.0" prefHeight="25.0" prefWidth="76.0" unFocusColor="#020202" />
-      <Text layoutX="645.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit :" wrappingWidth="43.0">
+      <JFXComboBox layoutX="436.0" layoutY="57.0" prefHeight="25.0" prefWidth="76.0" unFocusColor="#020202" />
+      <Text layoutX="396.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit :" wrappingWidth="43.0">
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font>
       </Text>
-      <JFXTextField layoutX="691.0" layoutY="217.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
-      <JFXButton layoutX="601.0" layoutY="267.0" prefHeight="24.0" prefWidth="53.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="print">
+      <JFXTextField layoutX="442.0" layoutY="87.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
+      <JFXButton layoutX="352.0" layoutY="137.0" prefHeight="24.0" prefWidth="53.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="print">
          <font>
             <Font size="11.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="664.0" layoutY="266.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="clear">
+      <JFXButton layoutX="415.0" layoutY="136.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="clear">
          <font>
             <Font size="11.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="718.0" layoutY="267.0" prefHeight="5.0" prefWidth="63.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="add stock">
+      <JFXButton layoutX="469.0" layoutY="137.0" prefHeight="5.0" prefWidth="63.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="add stock">
          <font>
             <Font size="11.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="788.0" layoutY="267.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="save">
+      <JFXButton layoutX="539.0" layoutY="137.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="save">
          <font>
             <Font size="11.0" />
          </font>
       </JFXButton>
-      <Button layoutX="770.0" layoutY="190.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="21.0" style="-fx-background-color: FFFFFF;" text="+">
+      <Button layoutX="521.0" layoutY="60.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="21.0" style="-fx-background-color: FFFFFF;" text="+">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
       </Button>
-      <JFXTextField layoutX="448.0" layoutY="304.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="BLACK" />
-      <JFXButton layoutX="572.0" layoutY="304.0" text="    " />
-      <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="572.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+      <JFXTextField layoutX="199.0" layoutY="174.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="BLACK" />
+      <JFXButton layoutX="323.0" layoutY="174.0" text="    " />
+      <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="323.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/icons8-search-24.png" />
          </image>
       </ImageView>
-      <TableView layoutX="267.0" layoutY="362.0" prefHeight="132.0" prefWidth="614.0">
+      <TableView layoutX="18.0" layoutY="252.0" prefHeight="145.0" prefWidth="614.0">
         <columns>
           <TableColumn prefWidth="59.333343505859375" text="code" />
           <TableColumn prefWidth="70.00003051757812" text="description" />
@@ -320,24 +135,5 @@
             <TableColumn prefWidth="54.66668701171875" text="option" />
         </columns>
       </TableView>
-      <ImageView fitHeight="132.0" fitWidth="70.0" layoutX="1001.0" layoutY="417.0" opacity="0.27" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 0;">
-         <image>
-            <Image url="@../img/blossom-curved-twig-with-two-pink-flowers.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="1036.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -25;">
-         <image>
-            <Image url="@../img/cartoony-calculator.png" />
-         </image>
-      </ImageView>
-      <JFXButton layoutX="100.0" layoutY="549.0" onAction="#btnArrowBack" prefHeight="37.0" prefWidth="21.0" style="-fx-background-color: #808080;" text=" ">
-         <graphic>
-            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/icons8-back-64.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </JFXButton>
    </children>
 </AnchorPane>

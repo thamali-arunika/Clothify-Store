@@ -20,4 +20,22 @@ public class EmployerForm {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void btnItemItem(ActionEvent actionEvent) {
+    }
+
+    public void btnOrdersOrders(ActionEvent actionEvent) {
+    }
+
+    public void btnEmployerEmployer(ActionEvent actionEvent) {
+    }
+
+    public void btnSupplierSupplier(ActionEvent actionEvent) {
+    }
+
+    public void btnOrderDetailsOrderDetails(ActionEvent actionEvent) {
+    }
+
+    public void btnSalesReturnSalesReturn(ActionEvent actionEvent) {
+    }
 }

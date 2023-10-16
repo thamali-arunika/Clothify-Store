@@ -21,4 +21,25 @@ public class ItemController {
         stage.setScene(scene);
         stage.show();
     }
+
+    public void btnItemItem(ActionEvent actionEvent) {
+    }
+
+    public void btnOrdersOrders(ActionEvent actionEvent) {
+    }
+
+    public void btnEmployerEmployer(ActionEvent actionEvent) {
+    }
+
+    public void btnSupplierSuplier(ActionEvent actionEvent) {
+    }
+
+    public void btnOrderDetailsOrderDetails(ActionEvent actionEvent) {
+    }
+
+    public void btnSalesReturnSalesReturn(ActionEvent actionEvent) {
+    }
+
+    public void btnSalesReportSalesReport(ActionEvent actionEvent) {
+    }
 }
