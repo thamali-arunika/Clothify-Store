@@ -14,7 +14,7 @@ public class Employer {
     private String title;
     private String name;
     private String nic;
-    private LocalDate dateOfBirth;
+    private LocalDate dob;
     private String address;
     private String bankAccNo;
     private String bankBranch;
