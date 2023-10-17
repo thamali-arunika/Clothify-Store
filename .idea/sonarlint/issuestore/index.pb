@@ -19,8 +19,6 @@ X
 (src/main/java/model/SupplierInvoice.java,d\7\d738d05d09093a6b775a1a3135699f46e8b71797
 Q
 !src/main/java/model/Supplies.java,5\1\512e0c48f4f32e55ed8f3e579ac7dcc01d775000
-M
-src/main/java/model/User.java,8\e\8e1ebf0166aec1f7f81589f5763cf23a86e9c01e
 G
 src/main/java/Main.java,e\4\e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
 ^
@@ -37,7 +35,3 @@ Z
 *src/main/java/controller/EmployerForm.java,5\1\51c643246285b984584f2cf6e76e2457c27ed70b
 \
 ,src/main/java/controller/ItemController.java,c\5\c5bc9c0b869017cf15f321ad82218629880e2d31
-]
--src/main/java/controller/loginController.java,d\1\d1cc9996908bf5d325ac297d0bdd2d79ea4d264f
-[
-+src/main/java/controller/DashBoardForm.java,3\7\37ea21fed781dc7d1f67947c959503dcf080e3af

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Group layoutX="-6.0" layoutY="14.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="419.0" layoutY="-20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="670.0">
+               <effect>
+                  <InnerShadow choke="0.12" height="96.92" radius="59.1525" width="141.69">
+                     <color>
+                        <Color red="0.5" green="0.054999999701976776" blue="0.3590833246707916" opacity="0.6018782258033752" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#66003359" height="219.0" layoutX="165.0" layoutY="150.0" stroke="#82561500" strokeType="INSIDE" width="316.0">
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="0.6228070259094238" green="0.20183560252189636" blue="0.4123212993144989" opacity="0.800000011920929" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+            </Rectangle>
+            <Text layoutX="238.0" layoutY="178.46923828125" strokeType="OUTSIDE" strokeWidth="0.0" text="Item type sold monthly" wrappingWidth="185.61065673828125">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#410303" layoutX="231.0" layoutY="182.01953125" strokeType="OUTSIDE" strokeWidth="0.0" text="__ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __  __ __" wrappingWidth="200.00000000000006">
+               <font>
+                  <Font name="Segoe Print" size="8.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038686" height="91.0" layoutX="40.0" layoutY="23.0" stroke="TRANSPARENT" strokeType="INSIDE" width="104.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038686" height="91.0" layoutX="193.0" layoutY="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="104.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038686" height="91.0" layoutX="338.0" layoutY="20.0" stroke="TRANSPARENT" strokeType="INSIDE" width="104.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#038686" height="91.0" layoutX="523.0" layoutY="16.0" stroke="TRANSPARENT" strokeType="INSIDE" width="104.0" />
+            <Text fill="#ffd1a2" layoutX="341.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employers" wrappingWidth="117.6600722498822">
+               <font>
+                  <Font name="Cambria" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#ffd1a2" layoutX="529.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suppliers" wrappingWidth="113.07608795166016">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+            </Text>
+            <PieChart layoutX="205.0" layoutY="204.0" prefHeight="150.0" prefWidth="239.0" style="-fx-background-color: C0C0C0;" />
+            <Label layoutX="78.0" layoutY="61.0" text="50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="61.0" text="50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="378.0" layoutY="61.0" text="50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="538.0" layoutY="61.0" text="50">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text fill="#ffd1a2" layoutX="212.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders" wrappingWidth="117.6600722498822">
+               <font>
+                  <Font name="Cambria" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="#ffd1a2" layoutX="70.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item" wrappingWidth="117.6600722498822">
+               <font>
+                  <Font name="Cambria" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

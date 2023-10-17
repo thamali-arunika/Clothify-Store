@@ -21,7 +21,7 @@
    <children>
       <Group layoutX="-272.0" layoutY="-67.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="441.0" layoutX="270.0" layoutY="63.0" stroke="TRANSPARENT" strokeType="INSIDE" width="661.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa2c7ab" height="419.0" layoutX="270.0" layoutY="63.0" stroke="TRANSPARENT" strokeType="INSIDE" width="670.0">
                <effect>
                   <InnerShadow choke="0.12" height="96.92" radius="59.1525" width="141.69">
                      <color>
@@ -31,13 +31,13 @@
                </effect>
             </Rectangle>
             <ButtonBar prefHeight="40.0" prefWidth="200.0" />
-            <Text layoutX="298.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empoyer Id :" wrappingWidth="89.0">
+            <Text layoutX="301.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empoyer Id :" wrappingWidth="89.0">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="375.0" layoutY="66.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-            <TableView layoutX="282.0" layoutY="300.0" prefHeight="182.0" prefWidth="633.0">
+            <JFXTextField layoutX="375.0" layoutY="82.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <TableView layoutX="289.0" layoutY="305.0" prefHeight="157.0" prefWidth="633.0">
                <columns>
                   <TableColumn prefWidth="72.66665649414062" text="Item Code" />
                   <TableColumn prefWidth="81.33331298828125" text="Description" />
@@ -51,7 +51,7 @@
                   <TableColumn minWidth="0.0" prefWidth="70.0" text="Option" />
                </columns>
             </TableView>
-            <TableView layoutX="283.0" layoutY="120.0" prefHeight="173.0" prefWidth="632.0">
+            <TableView layoutX="289.0" layoutY="133.0" prefHeight="161.0" prefWidth="632.0">
                <columns>
                   <TableColumn prefWidth="72.66665649414062" text="Order Id" />
                   <TableColumn prefWidth="81.33331298828125" text="Date" />
@@ -63,7 +63,7 @@
                   <TableColumn minWidth="0.0" prefWidth="78.0" text="Arrears" />
                </columns>
             </TableView>
-            <Button layoutX="818.0" layoutY="72.0" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #CCFFFF; -fx-background-radius: 45px;">
+            <Button layoutX="882.0" layoutY="80.0" mnemonicParsing="false" onAction="#btnRefreshOnAction" prefHeight="25.0" prefWidth="41.0" style="-fx-background-color: #CCFFFF; -fx-background-radius: 45px;">
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
