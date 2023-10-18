@@ -9,7 +9,3 @@ W
 'src/main/java/controller/OrderForm.java,6\d\6d8f9ffeb98f1b77fdd41462f4d4f6009e368a88
 Y
 )src/main/java/controller/SalesReport.java,2\d\2d9ac7f551f0bfa5815bad886a00b6e65e8d8968
-Z
-*src/main/java/controller/EmployerForm.java,5\1\51c643246285b984584f2cf6e76e2457c27ed70b
-\
-,src/main/java/controller/ItemController.java,c\5\c5bc9c0b869017cf15f321ad82218629880e2d31

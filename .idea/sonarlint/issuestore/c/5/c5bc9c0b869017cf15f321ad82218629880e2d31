@@ -1,21 +1,0 @@
-
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Î™¸ 8İÚÖÉ³1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(É°Â£ûÿÿÿÿ8Û”×É³1
-£
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”Æ“áúÿÿÿÿ8Õ²×É³1
-
-java:S1186""€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(²”‰¤8éÔ×É³1
-£
-java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÇìÉ¨øÿÿÿÿ8®ô×É³1
-£
-java:S1186("€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Êé‰½ùÿÿÿÿ8¡˜ØÉ³1
-
-java:S1186+"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(³¨‡8¸¿ØÉ³1
-w
-java:S1450"URemove the "parent" field and declare it as a local variable in the relevant methods.(ßçÖ’ûÿÿÿÿ8Ä’ÇÇ³1
-q
-java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(÷‘éÑ8Ä’ÇÇ³1
-v
-java:S1450"TRemove the "stage" field and declare it as a local variable in the relevant methods.(‹ğÑœıÿÿÿÿ8Ä’ÇÇ³1
