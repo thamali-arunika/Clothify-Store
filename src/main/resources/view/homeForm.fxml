@@ -10,7 +10,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Group layoutX="-6.0" layoutY="14.0">
@@ -57,7 +56,7 @@
                   <Font name="Cambria" size="24.0" />
                </font>
             </Text>
-            <PieChart layoutX="205.0" layoutY="204.0" prefHeight="150.0" prefWidth="239.0" style="-fx-background-color: C0C0C0;" />
+            <PieChart fx:id="pieChart" layoutX="205.0" layoutY="204.0" prefHeight="150.0" prefWidth="239.0" style="-fx-background-color: C0C0C0;" />
             <Label layoutX="78.0" layoutY="61.0" text="50">
                <font>
                   <Font name="System Bold" size="24.0" />
