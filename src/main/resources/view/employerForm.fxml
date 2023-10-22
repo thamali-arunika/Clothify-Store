@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.TableColumn?>
@@ -32,13 +33,13 @@
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="100.0" layoutY="4.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmployerId" layoutX="100.0" layoutY="4.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
             <Text layoutX="27.0" layoutY="69.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="103.5">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="61.0" layoutY="84.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmpDob" layoutX="61.0" layoutY="84.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
             <Text layoutX="27.0" layoutY="109.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="DOB :" wrappingWidth="51.97147178649902">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
@@ -54,7 +55,7 @@
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="402.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmpContact" layoutX="402.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
             <Text layoutX="348.0" layoutY="68.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank branch :" wrappingWidth="87.0">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
@@ -70,47 +71,55 @@
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="380.0" layoutY="115.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
-            <JFXButton layoutX="436.0" layoutY="155.0" prefHeight="24.0" prefWidth="53.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="print">
+            <JFXTextField fx:id="txtEmpNic" layoutX="380.0" layoutY="115.0" prefHeight="25.0" prefWidth="82.0" unFocusColor="BLACK" />
+            <JFXButton layoutX="436.0" layoutY="155.0" onAction="#btnEmpPrint" prefHeight="24.0" prefWidth="53.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="print">
                <font>
                   <Font size="11.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="511.0" layoutY="155.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="clear">
+            <JFXButton layoutX="511.0" layoutY="155.0" onAction="#btnEpClear" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="clear">
                <font>
                   <Font size="11.0" />
                </font>
             </JFXButton>
-            <JFXButton layoutX="579.0" layoutY="155.0" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="save">
+            <JFXButton layoutX="579.0" layoutY="155.0" onAction="#btnEmpSave" prefHeight="24.0" prefWidth="46.0" style="-fx-background-color: FF8000; -fx-background-radius: 20;" text="save">
                <font>
                   <Font size="11.0" />
                </font>
             </JFXButton>
-            <JFXTextField layoutX="215.0" layoutY="181.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="BLACK" />
-            <JFXButton layoutX="339.0" layoutY="181.0" text="    " />
-            <TableView layoutX="19.0" layoutY="250.0" prefHeight="132.0" prefWidth="631.0">
+            <JFXTextField fx:id="txtEmpSearch" layoutX="215.0" layoutY="181.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="BLACK" />
+            <JFXButton layoutX="339.0" layoutY="181.0" onAction="#btnEmpSearch" text="    ">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-search-24.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <TableView fx:id="tblEmployer" layoutX="19.0" layoutY="250.0" prefHeight="132.0" prefWidth="631.0">
                <columns>
-                  <TableColumn prefWidth="59.333343505859375" text="Id" />
-                  <TableColumn prefWidth="70.00003051757812" text="Title" />
-                  <TableColumn prefWidth="62.000030517578125" text="Name" />
-                  <TableColumn prefWidth="72.66668701171875" text="DOB" />
-                  <TableColumn prefWidth="81.99993896484375" text="Address" />
-                  <TableColumn prefWidth="59.33331298828125" text="Contact" />
-                  <TableColumn prefWidth="83.3333740234375" text="Bank Account" />
+                  <TableColumn fx:id="clmId" prefWidth="59.333343505859375" text="Id" />
+                  <TableColumn fx:id="clmTitle" prefWidth="70.00003051757812" text="Title" />
+                  <TableColumn fx:id="clmEmpName" prefWidth="62.000030517578125" text="Name" />
+                  <TableColumn fx:id="clmEmpDob" prefWidth="72.66668701171875" text="DOB" />
+                  <TableColumn fx:id="clmEmpAddress" prefWidth="81.99993896484375" text="Address" />
+                  <TableColumn fx:id="clmEmpContact" prefWidth="59.33331298828125" text="Contact" />
+                  <TableColumn fx:id="clmEmpBkAccount" prefWidth="83.3333740234375" text="Bank Account" />
                   <TableColumn minWidth="0.0" prefWidth="0.0" text="profit" />
-                  <TableColumn prefWidth="77.55560302734375" text="Bank Branch" />
-                  <TableColumn prefWidth="60.00002034505212" text="NIC" />
+                  <TableColumn fx:id="clmEmpBankBranch" prefWidth="77.55560302734375" text="Bank Branch" />
+                  <TableColumn fx:id="clmEmpNic" prefWidth="60.00002034505212" text="NIC" />
                </columns>
             </TableView>
-            <JFXTextField layoutX="67.0" layoutY="44.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
-            <JFXTextField layoutX="84.0" layoutY="121.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-            <JFXTextField layoutX="425.0" layoutY="42.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
-            <JFXTextField layoutX="433.0" layoutY="78.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
-            <ImageView fitHeight="22.0" fitWidth="29.0" layoutX="336.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/icons8-search-24.png" />
-               </image>
-            </ImageView>
+            <JFXTextField fx:id="txtEmpName" layoutX="67.0" layoutY="44.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmpAddress" layoutX="84.0" layoutY="121.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmpBankBranch" layoutX="425.0" layoutY="42.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtEmpBankAccount" layoutX="433.0" layoutY="78.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
+            <Text layoutX="29.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" wrappingWidth="75.7444598552338">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Text>
+            <JFXComboBox fx:id="cmbTitle" layoutX="64.0" layoutY="158.0" prefHeight="25.0" prefWidth="89.0" unFocusColor="BLACK" />
          </children>
       </Group>
    </children>

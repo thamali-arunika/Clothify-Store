@@ -74,7 +74,7 @@ public class ItemController implements Initializable {
     }
 private void tblLoad(){
     ObservableList<Item>itemList= FXCollections.observableArrayList();
-    List<Item>list=new ArrayList<>()
+    List<Item>list=new ArrayList<>();
 }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
