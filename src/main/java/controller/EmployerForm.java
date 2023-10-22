@@ -100,15 +100,20 @@ public class EmployerForm implements Initializable {
 
     public void btnEmpSave(ActionEvent actionEvent) {
 
-        Boolean isAdd = CrudUtil.execute("INSERT INTO Employer(title,name,nic,dob,address,contact,bankAccount,bankBranch)\n" + "VALUES(?, ?, ?, ?, ?, ?, ?, ?)",
-                cmbTitle.getSelectionModel().getSelectedItem().toString(),
-                txtEmpName.getText(),
-                txtEmpNic.getText(),
-                txtEmpDob.getText(),
-                txtEmpAddress.getText(),
-                txtEmpBankAccount.getText(),
-                txtEmpBankBranch.getText(),
-                txtEmpContact.getText();
+        Boolean isAdd = null;
+        try {
+            isAdd = CrudUtil.execute("INSERT INTO Employer(title,name,nic,dob,address,contact,bankAccount,bankBranch)\n" + "VALUES(?, ?, ?, ?, ?, ?, ?, ?)",
+                    cmbTitle.getSelectionModel().getSelectedItem().toString(),
+                    txtEmpName.getText(),
+                    txtEmpNic.getText(),
+                    txtEmpDob.getText(),
+                    txtEmpAddress.getText(),
+                    txtEmpBankAccount.getText(),
+                    txtEmpBankBranch.getText(),
+                    txtEmpContact.getText());
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         if(isAdd){
             new Alert(Alert.AlertType.INFORMATION,"Added Success !").show();
         }else {

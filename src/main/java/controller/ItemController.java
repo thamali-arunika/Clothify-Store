@@ -49,7 +49,11 @@ public class ItemController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent parent;
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
+
+    }
     public void btnArrowBack(ActionEvent actionEvent) throws IOException {
         parent= FXMLLoader.load(getClass().getResource("/view/dashBoardForm.fxml"));
         stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
@@ -72,18 +76,11 @@ public class ItemController implements Initializable {
 
     public void btnItemSearch(ActionEvent actionEvent) {
     }
-private void tblLoad(){
-    ObservableList<Item>itemList= FXCollections.observableArrayList();
-    List<Item>list=new ArrayList<>();
-}
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-//        txtAddQty.setDisable(true);
-//        txtItemType.setDisable(true);
-//        txtItemSize.setDisable(true);
-//        btnAddStock.setDisable(true);
-//
-    }
+//private void tblLoad(){
+//    ObservableList<Item>itemList= FXCollections.observableArrayList();
+//    List<Item>list=new ArrayList<>();
+//}
+
 
 
     public void btnSize(ActionEvent actionEvent) {

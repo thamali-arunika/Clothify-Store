@@ -14,5 +14,6 @@ public class Supplier {
     private String supplierName;
     private String contact;
     private String company;
+    private String option;
     private String email;
 }

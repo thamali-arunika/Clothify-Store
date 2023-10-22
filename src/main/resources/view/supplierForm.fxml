@@ -27,19 +27,19 @@
                   </InnerShadow>
                </effect>
             </Rectangle>
-            <Text layoutX="306.0" layoutY="108.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Suplier Id :" wrappingWidth="89.0">
+            <Text layoutX="306.0" layoutY="108.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Id :" wrappingWidth="89.0">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="370.0" layoutY="83.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-            <Text layoutX="305.0" layoutY="147.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" wrappingWidth="103.5">
+            <JFXTextField fx:id="txtSupplierId" layoutX="377.0" layoutY="83.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <Text layoutX="305.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title :" wrappingWidth="103.5">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
             </Text>
-            <JFXTextField layoutX="396.0" layoutY="161.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-            <Text layoutX="306.0" layoutY="186.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name :" wrappingWidth="109.0">
+            <JFXTextField fx:id="txtSupName" layoutX="396.0" layoutY="164.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <Text layoutX="306.0" layoutY="189.775390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name :" wrappingWidth="109.0">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
                </font>
@@ -73,20 +73,21 @@
                      </image>
                   </ImageView>
                </graphic></JFXButton>
-            <TableView layoutX="284.0" layoutY="330.0" prefHeight="132.0" prefWidth="633.0">
+            <TableView fx:id="tblSupplier" layoutX="295.0" layoutY="330.0" prefHeight="132.0" prefWidth="614.0">
                <columns>
-                  <TableColumn prefWidth="78.00001525878906" text="ID" />
-                  <TableColumn prefWidth="87.33331298828125" text="Title" />
-                  <TableColumn prefWidth="106.666748046875" text="Name" />
-                  <TableColumn prefWidth="100.0" text="Unit Price" />
-                  <TableColumn prefWidth="103.33331298828125" text="Company" />
-                  <TableColumn minWidth="0.0" prefWidth="78.0" text="Contact" />
-                  <TableColumn minWidth="0.0" prefWidth="85.3333740234375" text="Option" />
+                  <TableColumn fx:id="clmSupId" prefWidth="78.00001525878906" text="ID" />
+                  <TableColumn fx:id="clmSupTitle" prefWidth="87.33331298828125" text="Title" />
+                  <TableColumn fx:id="clmSupName" prefWidth="106.666748046875" text="Name" />
+                  <TableColumn fx:id="clmSupContact" prefWidth="81.333251953125" text="Contact" />
+                  <TableColumn fx:id="clmSupCompany" minWidth="0.0" prefWidth="78.6666259765625" text="Company" />
+                  <TableColumn fx:id="clmSupUnitPrice" minWidth="0.0" prefWidth="84.666748046875" text="Unit Price" />
+                  <TableColumn fx:id="clmSupOption" minWidth="0.0" prefWidth="84.666748046875" text="Option" />
+                  <TableColumn fx:id="clmSupOption1" minWidth="0.0" prefWidth="84.666748046875" text="Option" />
                </columns>
             </TableView>
-            <JFXTextField layoutX="339.0" layoutY="122.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
-            <JFXTextField layoutX="357.0" layoutY="201.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
-            <JFXTextField layoutX="362.0" layoutY="243.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtSupTitle" layoutX="339.0" layoutY="122.0" prefHeight="25.0" prefWidth="116.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtSupContact" layoutX="357.0" layoutY="201.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
+            <JFXTextField fx:id="txtSupCompany" layoutX="362.0" layoutY="243.0" prefHeight="25.0" prefWidth="104.0" unFocusColor="BLACK" />
             <Text layoutX="306.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company :" wrappingWidth="63.19442749023415">
                <font>
                   <Font name="Comic Sans MS" size="12.0" />
@@ -94,9 +95,9 @@
             </Text>
             <TableView layoutX="568.0" layoutY="95.0" prefHeight="141.0" prefWidth="327.0">
               <columns>
-                <TableColumn prefWidth="111.333251953125" text="Item Code" />
-                <TableColumn prefWidth="100.0" text="Description" />
-                  <TableColumn prefWidth="115.3333740234375" text="Qty" />
+                <TableColumn fx:id="clmItemCode" prefWidth="111.333251953125" text="Item Code" />
+                <TableColumn fx:id="clmDescription" prefWidth="100.0" text="Description" />
+                  <TableColumn fx:id="clmQty" prefWidth="115.3333740234375" text="Qty" />
               </columns>
             </TableView>
          </children>
