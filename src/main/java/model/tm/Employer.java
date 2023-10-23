@@ -10,7 +10,7 @@ import java.time.LocalDate;
 @ToString
 
 public class Employer {
-    private String empId;
+    private int empId;
     private String title;
     private String name;
     private String nic;

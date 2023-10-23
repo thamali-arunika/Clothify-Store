@@ -61,29 +61,7 @@ public class EmployerForm implements Initializable {
        cmbTitle.getItems().addAll("Mrs","Mr","Ms");
 //       tblLoad();
     }
-//    public void tblLoad(){
-//        ObservableList<Employer>empList= FXCollections.observableArrayList();
-//        try {
-//            ResultSet rst = CrudUtil.execute("SELECT * FROM Employer");
-//            while (rst.next()){
-//                empList.add(new Employer(
-//                        rst.getInt(1),
-//                        rst.getString(2),
-//                        rst.getString(3),
-//                        rst.getString(4),
-//                        rst.getString(5),
-//                        rst.getString(6),
-//                        rst.getString(7),
-//                        rst.getString(8),
-//                        rst.getString(9)
-//                ));
-//            }
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        } catch (ClassNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
+
     public void btnArrowBack(ActionEvent actionEvent) throws IOException {
         parent= FXMLLoader.load(getClass().getResource("/view/dashBoardForm.fxml"));
         stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
@@ -123,6 +101,29 @@ public class EmployerForm implements Initializable {
 
     public void btnEmpSearch(ActionEvent actionEvent) {
     }
-
+    public void tblLoad(){
+        ObservableList<Employer>empList= FXCollections.observableArrayList();
+        try {
+            ResultSet result = CrudUtil.execute("SELECT * FROM Employer");
+            while (result.next()){
+                empList.add(new Employer(
+                        result.getInt(1),
+                        result.getString(2),
+                        result.getString(3),
+                        result.getString(4),
+                        result.getDate(5).toLocalDate(),
+                        result.getString(6),
+                        result.getString(7),
+                        result.getString(8),
+                        result.getString(9)
+                ));
+            }
+            tblEmployer.setItems(empList);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+    } catch (ClassNotFoundException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
 
 }
